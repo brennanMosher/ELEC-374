@@ -3,7 +3,7 @@ input [31:0] inputUnit,
 input clr, clk, 
 output [31:0] busMuxIn_In_Portin);
 
-reg tempBus;
+reg [31:0] tempBus;
 always @(posedge clk) begin
 	if(clr == 1'b1) begin
 		tempBus <= 0;
